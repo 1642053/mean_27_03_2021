@@ -1,0 +1,10 @@
+.footer{
+    padding: 30px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}

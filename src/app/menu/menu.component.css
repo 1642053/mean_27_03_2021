@@ -1,0 +1,27 @@
+.frm-nav{
+    margin-bottom: 30px;
+    background: hsl(0, 0%, 96%);
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin-right: 1px;
+}
+.menu ul li a{
+    display: block;
+    padding: 7px 10px;
+    background: #bdbdbd;
+    text-decoration: none;
+    color: black;
+}
+.menu ul li a:hover{
+    background: black;
+    color: white;
+}

@@ -1,0 +1,13 @@
+{{ name_category }}
+
+<hr>
+
+<ul>
+    <li *ngFor="let i of data | paginate: { itemsPerPage: limit, currentPage: p, totalItems: totalData }">
+        <a routerLink="/san-pham/{{ i }}">
+            {{ i }}
+        </a>
+    </li>
+</ul>
+
+<pagination-controls (pageChange)="p=$event"></pagination-controls>

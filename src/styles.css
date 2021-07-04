@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.card .card-header button{
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+}
+.card .card-header button::after{
+    content: "+";
+    float: right;
+}
+.err{
+    color: red;
+    font-size: 13px;
+    font-style: italic;
+}

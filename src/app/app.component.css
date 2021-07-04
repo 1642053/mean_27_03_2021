@@ -1,0 +1,15 @@
+/* #main{
+    display: flex;
+}
+#main .left{
+    width: 25%;
+}
+#main .right{
+    width: 75%;
+    padding: 20px;
+    background: red;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+} */

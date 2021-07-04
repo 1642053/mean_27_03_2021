@@ -1,0 +1,61 @@
+<h2>Gửi Liên Hệ</h2>
+<hr>
+<!-- FormsModule -->
+<!-- <form #contactForm="ngForm" (ngSubmit)="getFormContact(contactForm.value)">
+    <div class="form-group">
+        <label for="name">Họ Tên:</label>
+        <input type="text" required minlength="6" maxlength="20" class="form-control" placeholder="Nhập Họ Tên" id="name" name="name" #name="ngModel" [ngModel]="contact.name">
+        <span class="err" *ngIf="name.invalid">Họ Tên is invalid</span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" required class="form-control" placeholder="Nhập E-mail" id="email" name="email" #email="ngModel" [ngModel]="contact.email">
+        <span class="err" *ngIf="email.invalid">Email is invalid</span>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="tel" required class="form-control" placeholder="Nhập Số Điện Thoại" id="phone" name="phone" #phone="ngModel" [ngModel]="contact.phone">
+        <span class="err" *ngIf="phone.invalid">Số Điện Thoại is invalid</span>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Ghi Chú:</label>
+        <textarea class="form-control" required pattern="[a-zA-Z]*" cols="30" rows="3" placeholder="Nhập Ghi Chú" name="message" id="message" #message="ngModel" [ngModel]="contact.message"></textarea>
+        <span class="err" *ngIf="message.invalid">Ghi Chú is invalid</span>
+    </div>
+
+    <button type="submit" [disabled]="contactForm.invalid" class="btn btn-primary">Gửi Liên Hệ</button>
+</form> -->
+<!-- end -->
+
+<!-- formGroup -->
+<form [formGroup]="contactForm" (ngSubmit)="getFormGroup()">
+    <div class="form-group">
+        <label for="name">Họ Tên:</label>
+        <input type="text" class="form-control" placeholder="Nhập Họ Tên" id="name" name="name" formControlName="name">
+        <span class="err" *ngIf="name.invalid">Họ Tên is invalid</span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email"class="form-control" placeholder="Nhập E-mail" id="email" name="email" formControlName="email">
+        <span class="err" *ngIf="email.invalid">Email is invalid</span>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="tel" class="form-control" placeholder="Nhập Số Điện Thoại" id="phone" name="phone" formControlName="phone">
+        <span class="err" *ngIf="phone.invalid">Số Điện Thoại is invalid</span>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Ghi Chú:</label>
+        <textarea class="form-control" cols="30" rows="3" placeholder="Nhập Ghi Chú" name="message" id="message" formControlName="message"></textarea>
+        <span class="err" *ngIf="message.invalid">Ghi Chú is invalid</span>
+    </div>
+
+    <button type="submit" [disabled]="contactForm.invalid" class="btn btn-primary">Gửi Liên Hệ</button>
+</form>
+<!-- endformGroup -->

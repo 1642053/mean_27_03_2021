@@ -1,0 +1,31 @@
+<div class="frm-nav">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="menu">
+                <ul>
+                    <li><a routerLink="/">Trang chủ</a></li>
+                    <li><a routerLink="/danh-muc/abc">Danh Mục</a></li>
+                    <li><a routerLink="/san-pham/abc">Sản phẩm</a></li>
+                    <li><a routerLink="/tin-tuc/abc">Tin tức</a></li>
+                    <li><a routerLink="/lien-he.html">Liên hệ</a></li>
+                    <li><a routerLink="/chat">Chat</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="search">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Nhập từ khóa" #key>
+                        <div class="input-group-append">
+                          <button class="btn btn-success" type="button" (click)="go(key)">Go</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

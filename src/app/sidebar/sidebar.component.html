@@ -1,0 +1,22 @@
+<div class="sidebar">
+    <div class="dmsp">
+        <i class="fa fa-bars"></i>
+        Danh mục sản phẩm
+    </div>
+    <ngb-accordion #acc="ngbAccordion">
+        <ngb-panel *ngFor="let i of categories">
+            <ng-template ngbPanelTitle>
+                {{ i.name }}
+            </ng-template>
+            <ng-template ngbPanelContent>
+                <ul>
+                    <li *ngFor="let j of i.parents">
+                        <a routerLink="/danh-muc/{{ j.alias }}">
+                            {{ j.name }}
+                        </a>
+                    </li>
+                </ul>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>
