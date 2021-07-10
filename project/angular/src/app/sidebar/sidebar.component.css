@@ -1,0 +1,20 @@
+.sidebar__title{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    text-align: center;
+}
+.sidebar__category{
+    margin-bottom: 10px;
+}
+.sidebar__product{
+    padding: 10px;
+    border: 1px solid #333;
+}
+.sidebar__product--details{
+    padding: 10px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+.sidebar__product--details h4{
+    font-size: 16px;
+}

@@ -1,0 +1,34 @@
+<div class="sidebar">
+    
+    <div class="sidebar__category">
+        <div class="sidebar__title">
+            <i class="fa fa-bars"></i>
+            Danh mục sản phẩm
+        </div>
+        <div class="sidebar__list">
+            <ul>
+                <li *ngFor="let i of list_category">
+                    <a routerLink="/danh-muc/{{ i.alias }}">{{ i.name }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bestSeller">
+        <div class="sidebar__title">
+            <i class="fa fa-bars"></i>
+            Sản phẩm bán chạy
+        </div>
+        <div class="sidebar__product">
+            
+            <div class="sidebar__product--details" *ngFor="let j of list_bestSeller">
+                <a routerLink="/san-pham/{{ j.alias }}">
+                    <img src="/assets/img/product.png" class="img-fluid">
+                    <h4>{{ j.name }}</h4>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div>

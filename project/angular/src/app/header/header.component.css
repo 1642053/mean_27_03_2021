@@ -1,0 +1,9 @@
+header{
+    border: 1px solid #bdbdbd;
+}
+.header__top{
+    padding: 10px;
+}
+.header__bottom{
+    padding: 10px;
+}

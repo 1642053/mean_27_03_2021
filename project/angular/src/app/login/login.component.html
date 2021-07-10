@@ -1,0 +1,12 @@
+<h1>Login</h1>
+<form>
+    <div class="form-group">
+      <label for="username">Tên đăng nhập:</label>
+      <input type="text" class="form-control" placeholder="Nhập Tên đăng nhập" id="username" #username>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" placeholder="Nhập Mật khẩu" id="password" #password>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="formlogin(username,password)">Đăng nhập</button>
+</form>

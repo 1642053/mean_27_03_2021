@@ -1,0 +1,13 @@
+<h1>{{ link }}</h1>
+<div class="category">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let j of list_product">
+            <div class="category__product--details">
+                <a routerLink="/san-pham/{{ j.alias }}">
+                    <img src="/assets/img/product.png" class="img-fluid">
+                    <h3>{{ j.name }}</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

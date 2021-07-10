@@ -1,0 +1,8 @@
+.category__product--details{
+    padding: 10px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+.category__product--details h4{
+    font-size: 16px;
+}

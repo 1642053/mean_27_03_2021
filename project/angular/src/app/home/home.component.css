@@ -1,0 +1,12 @@
+.home__product{
+    padding: 10px;
+    border: 1px solid #333;
+}
+.home__product--details{
+    padding: 10px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+.home__product--details h3{
+    font-size: 18px;
+}
